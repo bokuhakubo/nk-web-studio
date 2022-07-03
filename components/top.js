@@ -33,10 +33,11 @@ export default function Top() {
             }
     
             try {
-                await send(serviceID, templateID, params)
-                alert('送信成功')
+                await send(serviceID, templateID, params);
+                // alert('送信成功');
+                window.location.href = '/thanks';
             } catch (error) {
-                alert(error)
+                alert(error);
             }
         }
     }
