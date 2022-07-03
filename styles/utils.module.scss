@@ -1,0 +1,56 @@
+// color
+$white: #ffffff;
+$black: #000000;
+
+// parts
+@mixin primaryBtn {
+    background-color: $black;
+    color: $white;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 500;
+    border: 1px solid $black;
+    transition: all .3s ease-out;
+    min-width: 200px;
+    text-align: center;
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
+    @media screen and (min-width: 768px) {
+        padding: 1.5rem 4rem;
+    }
+}
+
+// common
+.pc {
+	display: none;
+}
+.sectionInner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.primaryBtn {
+    @include primaryBtn;
+}
+.sectionHead {
+    text-align: center;
+    margin-bottom: 4rem;
+    .en {
+        font-size: 6rem;
+        font-weight: 900;
+        line-height: 1.2;
+    }
+    .jp {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .sp {
+		display: none;
+	}
+	.pc {
+		display: block;
+	}
+}

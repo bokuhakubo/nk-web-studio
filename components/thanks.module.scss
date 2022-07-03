@@ -1,0 +1,21 @@
+.thanks {
+    padding: 0 2rem;
+    margin: 5rem 0;
+    .en {
+        font-size: 4.8rem;
+    }
+    .return {
+        text-align: center;
+        margin-top: 5rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .thanks {
+        .en {
+            font-size: 6rem;
+        }
+        .text {
+            text-align: center;
+        }
+    }
+}
